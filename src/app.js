@@ -1,6 +1,7 @@
 const express     = require('express');
 const promise 	  = require('bluebird');
 const http 		    = require('http');
+const path 		    = require('path');
 
 const PORT        = 5000;
 
@@ -30,6 +31,7 @@ function start() {
 
   //route
   app.use(express.static('src/client'));
+  // app.use(express.static(path.join(__dirname, '/dist')))
   //start server
   server.listen(app.get('port') , function() {
       console.log("Start on port:" + (app.get('port')));
