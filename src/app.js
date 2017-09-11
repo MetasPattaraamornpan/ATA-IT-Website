@@ -31,6 +31,7 @@ function start() {
 
   //route
   app.use(express.static('src/client'));
+  // app.use(express.static('/dist'));
   // app.use(express.static(path.join(__dirname, '/dist')))
   //start server
   server.listen(app.get('port') , function() {

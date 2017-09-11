@@ -1,28 +1,31 @@
-// const webpack = require('webpack');
-// var path = require('path');
-const paths = require('./paths')
 const ENV = 'production'
+const webpack = require('webpack');
+const path = require('path');
+const getLoaders = require('./loaders')
 
-// var BUILD_DIR = path.resolve(__dirname, '../src/client/public');
-// var APP_DIR = path.resolve(__dirname, '../src/client/app');
+const BUILD_DIR = path.resolve(__dirname, '../src/client/public');
+const APP_DIR = path.resolve(__dirname, '../src/client/app');
+const DEV_DIR = path.resolve(__dirname, '../src/client');
 
-var config = {
+let config = {
   entry: APP_DIR + '/index.jsx',
   output: {
-    path: paths.appDist,
+    path: BUILD_DIR,
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: DEV_DIR
   },
-  context: paths.appSrc,
   devtool: 'source-map',
+  devServer: {
+      contentBase: DEV_DIR,
+      inline: true,
+      host: '0.0.0.0',
+      port: 5000,
+      publicPath: BUILD_DIR,
+      filename: "bundle.js"
+  },
   module : {
-    loaders : [
-      {
-        test : /\.jsx?/,
-        include : APP_DIR,
-        loader : 'babel-loader'
-      }
-    ]
+    noParse: /node_modules\/.bin/,
+    rules: getLoaders(ENV)
   }
 };
 

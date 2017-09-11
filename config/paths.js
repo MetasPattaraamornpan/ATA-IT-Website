@@ -7,7 +7,7 @@ const nodePaths = (process.env.NODE_PATH || '')
 
 module.exports = {
   nodePaths,
-  appSrc: resolve(__dirname, '../src'),
+  appSrc: resolve(__dirname, '../src/client/app'),
   appDist: resolve(__dirname, '../dist'),
   appNodeModules: resolve('node_modules')
 }
