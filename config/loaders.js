@@ -15,15 +15,15 @@ module.exports = function getLoaders (env) {
     },
     {
       test: /\.css$/,
-      use: ['style-loader', 'css-loader?modules']
+      use: ['style-loader', 'css-loader']
     },
     {
       test: /\.less$/,
-      use: ['style-loader', 'css-loader?modules', 'less-loader']
+      use: ['style-loader', 'css-loader', 'less-loader']
     },
     {
       test: /\.scss$/,
-      use: ['style-loader', 'css-loader?modules', 'sass-loader']
+      use: ['style-loader', 'css-loader', 'sass-loader']
     },
     {
       test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,

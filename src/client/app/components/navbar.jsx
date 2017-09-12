@@ -2,7 +2,7 @@ import React from "react"
 import './styles/navbar.css';
 
 const Navbar = () => (
-  <nav className='navbar navbar-default navbar-static-top'>
+  <navbar className='navbar navbar-default navbar-static-top'>
     <div className="navNarrow">
       <div className="narrowLinks">
         <img src="./app/components/images/logo.jpg" />
@@ -11,7 +11,7 @@ const Navbar = () => (
         <a href="#">Link 3</a>
       </div>
     </div>
-  </nav>
+  </navbar>
 )
 
 export default Navbar;
