@@ -27,21 +27,14 @@ module.exports = {
       }
     },{
       test: /\.css$/,
-      use: ['style-loader', 'css-loader?modules']
-    },{
-      test: /\.scss$/,
-      use: ['style-loader', 'css-loader?modules', 'sass-loader']
-    },{
-      test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
-      exclude: /\/favicon.ico$/,
       use: [
-        {
-          loader: 'file-loader',
+        { loader: "style-loader"},
+        { loader: "css-loader",
           options: {
-            name: 'static/media/[name].[hash:8].[ext]'
+            modules: true
           }
         }
-      ]
+      ],
     }]
   }
 }
