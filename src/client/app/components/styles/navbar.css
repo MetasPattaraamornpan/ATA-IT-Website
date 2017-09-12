@@ -1,9 +1,92 @@
-.navNarrow {
-  background-color: coral;
+.navHead {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(230, 230, 230);
+  position: fixed;
+  padding: 10px 0px;
+  width: 100%;
+
 }
 
-/*.navNarrow{
-  background-color: red;
-  margin: 40px;
-  border: 5px dotted pink;
-}*/
+.logo{
+  float: left;
+  padding: 10px 70px;
+}
+
+.navHead ul{
+  float: none;
+  margin: 0;
+  text-align: right;
+}
+
+.mainNavBar li {
+    display: inline-block;
+    padding: 27px 1vw;
+    color: rgb(122, 129, 124);
+    font-size: 20;
+    margin: 0;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  left: initial;
+  right: 36px;
+  width: 36px;
+  height: 30px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  overflow: hidden !important;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.menuBurger ul{
+  float: none;
+  margin: 0;
+  text-align: right;
+}
+
+.menu-item{
+  display: inline-block;
+  padding: 15px 0vw;
+  color: rgb(122, 129, 124);
+  font-size: 20;
+  margin: 0;
+  /*display: inline-block;
+  padding: 10px 0vw;
+  color: rgb(122, 129, 124);
+  font-size: 20;
+  margin: 0;*/
+
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
