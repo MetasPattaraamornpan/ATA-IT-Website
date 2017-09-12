@@ -1,15 +1,17 @@
 module.exports = function getLoaders (env) {
   const loaders = [
     {
-      test: /\.(js)$/,
-      use: ['eslint-loader'],
-      enforce: 'pre',
-      exclude: /(node_modules|bower_components)/
-    },
-    {
       test: /\.jsx$/,
       use: ['babel-loader'],
       exclude: /node_modules/
+    },{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: "babel-loader",
+      include: __dirname,
+      query: {
+        presets: [ "es2015", "react", "react-hmre" ]
+      }
     },
     {
       test: /\.css$/,

@@ -18,10 +18,13 @@ npm install
 # build webpack
 npm run build
 
-# run debug frontend
+# run development mode
 npm run dev
 
 # run the app
 npm start
+
+# Web path
+http://localhost:5000
 
 ```
