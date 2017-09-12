@@ -1,0 +1,27 @@
+.footfont {
+  color: rgb(114, 191, 190);
+  text-align: center;
+}
+
+.footerNav {
+  max-width:1200px;
+  margin:auto;
+}
+
+.footer {
+  background-color: #2e3137;
+  text-align: center;
+  position: relative;
+  margin-bottom: 560px;
+}
+
+.footerList {
+  width: 20.8333%;
+}
+
+.social {
+    padding-left: 0;
+    background-position: left center;
+    background-repeat: no-repeat;
+    font-color: white;
+}
