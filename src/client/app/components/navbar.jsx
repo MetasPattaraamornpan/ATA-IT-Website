@@ -1,10 +1,7 @@
 import React from "react"
 import './styles/navbar.css';
-import Responsive from 'react-responsive';
 import { push as Menu } from 'react-burger-menu'
-
-const Desktop = ({ children }) => <Responsive minWidth={940} children={children} />;
-const Mobile = ({ children }) => <Responsive maxWidth={940} children={children} />;
+import { Desktop, Mobile } from './device'
 
 
 export default class Navbar extends React.Component {

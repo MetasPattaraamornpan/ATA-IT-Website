@@ -1,12 +1,8 @@
 import React from 'react';
-import Responsive from 'react-responsive';
 import {render} from 'react-dom';
 import Footer from './components/footer.jsx'
 import Navbar from './components/navbar.jsx'
-//
-// Desktop, tablet and mobile setup
-const Desktop = ({ children }) => <Responsive minWidth={940} children={children} />;
-const Mobile = ({ children }) => <Responsive maxWidth={940} children={children} />;
+import { Desktop, Mobile } from './components/device'
 
 export default class App extends React.Component {
   render () {
