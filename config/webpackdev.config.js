@@ -25,6 +25,23 @@ module.exports = {
       query: {
         presets: [ "es2015", "react", "react-hmre" ]
       }
+    },{
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader?modules']
+    },{
+      test: /\.scss$/,
+      use: ['style-loader', 'css-loader?modules', 'sass-loader']
+    },{
+      test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+      exclude: /\/favicon.ico$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: 'static/media/[name].[hash:8].[ext]'
+          }
+        }
+      ]
     }]
   }
 }

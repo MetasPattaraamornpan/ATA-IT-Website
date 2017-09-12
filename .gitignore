@@ -5,3 +5,4 @@ npm-debug.log
 .tags1
 bundle.js
 bundle.js.map
+src/client/public

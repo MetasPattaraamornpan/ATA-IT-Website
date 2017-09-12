@@ -15,14 +15,6 @@ let config = {
     publicPath: DEV_DIR
   },
   devtool: 'source-map',
-  // devServer: {
-  //     // contentBase: DEV_DIR,
-  //     inline: true,
-  //     host: '0.0.0.0',
-  //     port: 5000,
-  //     publicPath: BUILD_DIR,
-  //     filename: "bundle.js"
-  // },
   module : {
     noParse: /node_modules\/.bin/,
     rules: getLoaders(ENV)
