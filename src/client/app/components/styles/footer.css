@@ -1,27 +1,75 @@
-.footfont {
-  color: rgb(114, 191, 190);
-  text-align: center;
+#footer {
+  background: #1ba0e2;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 100px;
+    color: white
 }
 
-.footerNav {
-  max-width:1200px;
-  margin:auto;
+#footer .breadcrumb {
+    font-size: 12px;
+    margin: auto;
+    width: 90%;
+    display: table;
 }
 
-.footer {
-  background-color: #2e3137;
-  text-align: center;
-  position: relative;
-  margin-bottom: 560px;
+#footer .breadcrumb ul#footer-about-us {
+    width: 20.8333%;
 }
 
-.footerList {
-  width: 20.8333%;
+#footer .breadcrumb ul {
+    display: block;
+    float: left;
+    width: 170px;
+    height: auto;
+    margin-left: 5px;
+    text-align: left;
 }
 
-.social {
+#footer .breadcrumb ul li.information, #footer .breadcrumb ul li.head a, #footer .breadcrumb ul li.social {
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+#footer .breadcrumb ul#footer-products, #footer .breadcrumb ul#footer-contact-us, #footer .breadcrumb ul#footer-social {
+    width: 20.833%;
+}
+
+#footer .breadcrumb ul li.social {
+    width: 20em;
+    position: relative;
     padding-left: 0;
     background-position: left center;
     background-repeat: no-repeat;
-    font-color: white;
+}
+
+#footer .breadcrumb ul li.social img {
+    width: 20%;
+    height: auto;
+}
+
+.social img {
+  width: 20%;
+  height: auto;
+}
+
+#footer .breadcrumb ul li.information {
+    width: 20em;
+    position: relative;
+}
+
+.tvContactIcon {
+    width: 37px;
+    height: 40px;
+    float: left;
+}
+
+#copyright {
+    border-top: 1px solid #fff;
+    margin-top: 15px;
+    text-align: left;
+    padding-top: 10px;
+    text-align: center;
 }

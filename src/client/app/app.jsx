@@ -12,6 +12,7 @@ export default class App extends React.Component {
           <br/><br/><br/><br/><br/><br/><br/><br/><br/>
           <Desktop>You are a desktop or laptop</Desktop>
           <Mobile>You are a mobile phone</Mobile>
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/>
           <Footer />
         </div>
     );
