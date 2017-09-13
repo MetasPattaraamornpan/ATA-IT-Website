@@ -8,8 +8,13 @@ export default class Navbar extends React.Component {
   showSettings (event) {
     event.preventDefault();
   }
+  state = {
+    selectIndex : 0
+  };
 
   render () {
+
+
       return (
         <div style={{position: 'fixed', zIndex: 999}}>
           <Desktop >
@@ -19,7 +24,7 @@ export default class Navbar extends React.Component {
                   <img src="./app/components/images/logo.jpg" />
                 </div>
                 <ul className="mainNavBar">
-                  <li className="menuHeader">ABOUT US</li>
+                  <li className="menuHeader selected">ABOUT US</li>
                   <li className="menuHeader">PRODUCT CATALOG</li>
                   <li className="menuHeader">CARREERS</li>
                   <li className="menuHeader">CONTACT US</li>
