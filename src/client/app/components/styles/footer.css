@@ -15,31 +15,13 @@
     position: relative;
 }
 
-#footer .container {
-  padding-top: 0px;
-  width: 970px;
-}
-
-#footer .footer-divider {
-  padding: 20px 0px 0px;
-  margin-bottom: 50px;
-  margin-top: 30px;
-  position: relative;
-  display: block;
-}
-
-#footer .divider col-md-6 {
-  width: 50%;
-  float: left;
-}
-
 #footer .textContainer {
   cursor: text;
   padding-top: 20px;
   line-height: 18px;
   display: block;
   font-family: Arial;
-  font-size: 18px;
+  color:#ffffff;
 }
 
 #footer .heading-menu{
@@ -53,49 +35,14 @@
   line-height:18px;
   font-family: Arial;
   font-size: 14px;
-  color:#ffffff;
   margin-top:0px;
   margin-bottom:10px;
+  color:#ffffff;
 }
 
-/*#footer .footer-container ul{
-  display: block;
-  float: left;
-  width: 170px;
-  height: auto;
-  margin-left: 5px;
-  text-align: left;
-}
-
-#footer .footer-container ul li, #footer .breadcrumb ul li a{
-    padding: 5px 0;
-    font-size: 14px;
-    font-weight: 700;
-    color: white;
-}
-
-#footer .footer-container ul li{
-    width: 20em;
-    position: relative;
-    padding-left: 0;
-    background-position: left center;
-    background-repeat: no-repeat;
-}*/
-
-/*.social img {
-  width: 20%;
-  height: auto;
-}*/
-
-/*#footer .footer-container ul li.information {
-    width: 20em;
-    position: relative;
-}*/
-
-#copyright {
-    border-top: 1px solid #fff;
-    margin-top: 15px;
-    text-align: left;
-    padding-top: 10px;
-    text-align: center;
+#footer .icon {
+  background: url(/app/components/images/facebook.png) no-repeat center #FFF;
+  background-size: cover;
+  height: 50%;
+  width: 100%;
 }
