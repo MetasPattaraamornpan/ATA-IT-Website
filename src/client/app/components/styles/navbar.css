@@ -4,6 +4,7 @@
   position: fixed;
   padding: 10px 0px;
   width: 100%;
+  top: 0px;
 }
 
 .logo{
@@ -18,11 +19,20 @@
 }
 
 .mainNavBar li {
+    font-family: Arial;
     display: inline-block;
     padding: 27px 1vw;
-    color: rgb(122, 129, 124);
+    color: #003450;
     font-size: 20;
     margin: 0;
+}
+
+.mainNavBar li:hover{
+  color: red;
+}
+
+.selected{
+  color:  rgb(228, 32, 36) !important;
 }
 
 /* Position and sizing of burger button */
