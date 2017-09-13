@@ -11,7 +11,7 @@ export default class Navbar extends React.Component {
 
   render () {
       return (
-        <div>
+        <div style={{position: 'fixed', zIndex: 999}}>
           <Desktop >
             <navbar className='navbar navbar-default navbar-static-top' >
               <div className="navHead">
@@ -19,10 +19,10 @@ export default class Navbar extends React.Component {
                   <img src="./app/components/images/logo.jpg" />
                 </div>
                 <ul className="mainNavBar">
-                  <li class="menuHeader">ABOUT US</li>
-                  <li class="menuHeader">PRODUCT CATALOG</li>
-                  <li class="menuHeader">CARREERS</li>
-                  <li class="menuHeader">CONTACT US</li>
+                  <li className="menuHeader">ABOUT US</li>
+                  <li className="menuHeader">PRODUCT CATALOG</li>
+                  <li className="menuHeader">CARREERS</li>
+                  <li className="menuHeader">CONTACT US</li>
                 </ul>
               </div>
             </navbar>

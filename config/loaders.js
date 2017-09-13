@@ -10,7 +10,7 @@ module.exports = function getLoaders (env) {
       loader: "babel-loader",
       include: __dirname,
       query: {
-        presets: [ "es2015", "react", "react-hmre" ]
+        presets: [ "es2015", "react", "react-hmre" , 'stage-2']
       }
     },
     {

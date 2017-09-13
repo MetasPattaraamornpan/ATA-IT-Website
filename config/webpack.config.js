@@ -16,8 +16,22 @@ let config = {
   },
   devtool: 'source-map',
   module : {
-    noParse: /node_modules\/.bin/,
-    rules: getLoaders(ENV)
+    loaders: [{
+      test: /\.jsx$/,
+      use: ['babel-loader'],
+      exclude: /node_modules/
+    },{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: "babel-loader",
+      include: APP_DIR,
+      query: {
+        presets: [ "es2015", "react", 'stage-2' ]
+      }
+    },{
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
+    }]
   }
 };
 

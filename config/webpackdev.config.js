@@ -23,7 +23,7 @@ module.exports = {
       loader: "babel-loader",
       include: APP_DIR,
       query: {
-        presets: [ "es2015", "react", "react-hmre" ]
+        presets: [ "es2015", "react", "react-hmre", 'stage-2' ]
       }
     },{
       test: /\.css$/,

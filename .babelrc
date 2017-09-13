@@ -1,6 +1,20 @@
 {
-  "plugins": [
-    "react-html-attrs"
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true
+  },
+  "presets": [
+    "stage-2",
+    ["es2015", {
+      "loose": true,
+      "modules": false
+    }],
+    "react"
   ],
-  "presets" : ["es2015", "react"]
+  "plugins": [
+    "transform-flow-strip-types",
+    "transform-class-properties",
+    "syntax-jsx"
+  ]
 }
