@@ -9,7 +9,6 @@ class Footer extends React.Component{
       <div id="footer">
         <Desktop>
           <Row around="xs">
-            <Col xs={1}></Col>
             <Col xs={4}>
               <div class="textContainer"><font color="#ffffff">
                 <p class="heading-menu">About Us</p>
@@ -27,18 +26,19 @@ class Footer extends React.Component{
                   <li class="submenu">Join us</li>
                 </ul>
                 <p class="heading-menu">Contact us</p>
-                <p class="heading-menu"><br/></p>
-                <p class="heading-menu">© ATA IT Limited. All rights reserved 2017.</p>
+
                 </font>
               </div>
+            </Col>
+
+            <Row bottom="xs">
+            <Col xs={12}>
+                <div className="facebook-icon"/><div className="instagram-icon"/><div className="linkedin-icon"/>
+                <br/>
+                <p class="heading-menu"><font color="#ffffff">© ATA IT Limited. All rights reserved 2017.</font></p>
 
             </Col>
-            <Col xs={3}></Col>
-            <Col xs={3}>
-              <Row start="xs">
-                
-              </Row>
-            </Col>
+            </Row>
           </Row>
         </Desktop>
         <Mobile>

@@ -40,9 +40,21 @@
   color:#ffffff;
 }
 
-#footer .icon {
-  background: url(/app/components/images/facebook.png) no-repeat center #FFF;
+#footer .facebook-icon {
+  background: url(/app/components/images/fb_logo.png);
   background-size: cover;
-  height: 50%;
-  width: 100%;
+  height: 6%;
+  width: 15%;
+}
+#footer .instagram-icon {
+  background: url(/app/components/images/ig_logo.png);
+  background-size: cover;
+  height: 6%;
+  width: 15%;
+}
+#footer .linkedin-icon {
+  background: url(/app/components/images/in_logo.png);
+  background-size: cover;
+  height: 6%;
+  width: 15%;
 }
