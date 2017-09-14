@@ -44,14 +44,26 @@ export default class Navbar extends React.Component {
       <div className="homeContent">
         <section className="topSection">
           <article style={{width:'100%', height:'100%'}}>
-          <div id="container">
-          Efficiency in
-          <div id="flip">
-            <div><div>Motion</div></div><br/>
-            <div><div>Work</div></div><br/>
-            <div><div>Everything</div></div><br/>
-          </div>
-          </div>
+            <Desktop>
+              <div id="container-desktop">
+                Efficiency in
+                <div id="flip">
+                  <div><div>Motion</div></div><br/>
+                  <div><div>Work</div></div><br/>
+                  <div><div>Everything</div></div><br/>
+                </div>
+              </div>
+            </Desktop>
+            <Mobile>
+              <div id="container-mobile">
+                Efficiency in
+                <div id="flip">
+                  <div><div>Motion</div></div><br/>
+                  <div><div>Work</div></div><br/>
+                  <div><div>Everything</div></div><br/>
+                </div>
+              </div>
+            </Mobile>
           </article>
         </section>
         <AboutUs />

@@ -24,8 +24,8 @@ export default class Navbar extends React.Component {
                 <ul className="mainNavBar">
                   <li className="menuHeader selected">HOME</li>
                   <li className="menuHeader">ABOUT US</li>
-                  <li className="menuHeader">PRODUCT CATALOG</li>
-                  <li className="menuHeader">CARREERS</li>
+                  <li className="menuHeader">OUR TEAMS</li>
+                  <li className="menuHeader">CAREERS</li>
                   <li className="menuHeader">CONTACT US</li>
                 </ul>
               </div>
@@ -41,8 +41,8 @@ export default class Navbar extends React.Component {
                   <ul className="menuBurger">
                     <li className="menuHeader selected">HOME</li>
                     <li className="menu-item">ABOUT US</li>
-                    <li className="menu-item">PRODUCT CATALOG</li>
-                    <li className="menu-item">CARREERS</li>
+                    <li className="menu-item">OUR TEAMS</li>
+                    <li className="menu-item">CAREERS</li>
                     <li className="menu-item">CONTACT US</li>
                   </ul>
                 </Menu>
