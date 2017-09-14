@@ -21,7 +21,7 @@ export default class Navbar extends React.Component {
             <navbar className='navbar navbar-default navbar-static-top' >
               <div className="navHead">
                 <div className="logo">
-                  <img src="./app/components/images/logo.jpg" />
+                  <img className="logo_image_desktop" src="./app/components/images/logo.jpg" />
                 </div>
                 <ul className="mainNavBar">
                   <li className="menuHeader" onClick={() => {this.goTo(0)}}>HOME</li>
@@ -37,7 +37,7 @@ export default class Navbar extends React.Component {
             <navbar className='navbar navbar-default navbar-static-top' >
               <div className="navHead" >
                 <div className="logo">
-                  <img src="./app/components/images/logo.jpg" />
+                  <img className="logo_image_mobile" src="./app/components/images/logo.jpg" />
                 </div>
                 <Menu id="stack" right customBurgerIcon={ <img src="./app/components/images/menu_icon.png" /> }>
                   <ul className="menuBurger">
