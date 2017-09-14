@@ -14,7 +14,7 @@ export default class ContactUs extends React.Component {
         <Row className="contactusRow">
           <Col xs>
             <div style={{height: '400px'}} >
-              <iframe className="map" scrolling="no" frameborder="0" style={{border: '0px', width: '100%', height: '100%'}} src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAxJ8eSkp2ZBnjHBUEz_xk3Q3SBv9yzXos&amp;q=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%A0%E0%B8%B1%E0%B8%A2%20%E0%B8%AA%E0%B8%B2%E0%B8%97%E0%B8%A3&amp;zoom=15&amp;maptype=roadmap"></iframe>
+              <iframe className="map" scrolling="no" frameBorder="0" style={{border: '0px', width: '100%', height: '100%'}} src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAxJ8eSkp2ZBnjHBUEz_xk3Q3SBv9yzXos&amp;q=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%A0%E0%B8%B1%E0%B8%A2%20%E0%B8%AA%E0%B8%B2%E0%B8%97%E0%B8%A3&amp;zoom=15&amp;maptype=roadmap"></iframe>
             </div>
           </Col>
           <Col xs>

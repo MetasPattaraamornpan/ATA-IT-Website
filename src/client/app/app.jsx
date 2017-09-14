@@ -10,7 +10,10 @@ export default class App extends React.Component {
     return (
         <div>
           <Navbar />
-          <Home />
+          <div style={{position: 'relative', top: '100px'}}>
+            <Home />
+            <Footer />
+          </div>
         </div>
     );
   }

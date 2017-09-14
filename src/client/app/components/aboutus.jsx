@@ -1,6 +1,7 @@
 import './styles/aboutus.css';
 import React from "react"
 import { Row, Col } from 'react-flexbox-grid';
+import {Desktop, Mobile } from "./device"
 
 export default class AboutUs extends React.Component {
   render () {
