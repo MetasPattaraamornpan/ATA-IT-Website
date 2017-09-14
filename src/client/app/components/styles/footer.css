@@ -1,27 +1,64 @@
-.footfont {
-  color: rgb(114, 191, 190);
-  text-align: center;
+#footer {
+    background: #003450;
+    width: 100%;
+    padding-top: 0px;
+    border-radius:0px
 }
 
-.footerNav {
-  max-width:1200px;
-  margin:auto;
+#footer .footer-container {
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-size: 14px;
+    line-height: 1.428571429;
+    margin: auto;
+    width: 90%;
+    display: block;
+    position: relative;
 }
 
-.footer {
-  background-color: #2e3137;
-  text-align: center;
-  position: relative;
-  margin-bottom: 560px;
+#footer .textContainer {
+  cursor: text;
+  padding-top: 20px;
+  line-height: 18px;
+  display: block;
+  font-family: Arial;
+  color:#ffffff;
 }
 
-.footerList {
-  width: 20.8333%;
+#footer .heading-menu{
+  line-height:18px;
+  font-family: Arial;
+  font-size: 16px;
+  color:#ffffff;
 }
 
-.social {
-    padding-left: 0;
-    background-position: left center;
-    background-repeat: no-repeat;
-    font-color: white;
+#footer .submenu ul{
+  line-height:18px;
+  font-family: Arial;
+  font-size: 14px;
+  margin-top:0px;
+  margin-bottom:10px;
+  color:#ffffff;
+}
+
+#footer .footer-icon {
+  padding-left: 0px
+}
+
+#footer .facebook-icon {
+  background: url(/app/components/images/fb_logo.png) no-repeat 0px;
+  background-size: cover;
+  height: 4%;
+  width: 100%;
+}
+#footer .instagram-icon {
+  background: url(/app/components/images/ig_logo.png);
+  background-size: cover;
+  height: 4%;
+  width: 100%;
+}
+#footer .linkedin-icon {
+  background: url(/app/components/images/in_logo.png);
+  background-size: cover;
+  height: 4%;
+  width: 100%;
 }
