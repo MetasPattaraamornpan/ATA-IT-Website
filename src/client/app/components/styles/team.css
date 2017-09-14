@@ -5,8 +5,12 @@
   background-color: rgb(230, 230, 230);
 }
 
-img{
+.teamContent img{
   float: right;
+}
+
+.teamContent img:hover, h2{
+ cursor:pointer;
 }
 
 .teamRow{
@@ -23,5 +27,31 @@ img{
 .teamContent h2 front{
   line-height: 24px;
   font-size: 22px;
+  box-sizing: border-box;
+}
+
+.teamModal h2{
+  font-family: Arial;
+  color: #003450;
+  font-Weight: bold;
+  word-wrap: break-word;
+}
+
+.teamModal h2 front{
+  line-height: 24px;
+  font-size: 22px;
+  box-sizing: border-box;
+}
+
+.teamModal h3{
+  font-family: Arial;
+  color: #003450;
+  font-Weight: 400;
+  white-space: pre-line;
+}
+
+.teamModal h3 front{
+  line-height: 20px;
+  font-size: 18px;
   box-sizing: border-box;
 }

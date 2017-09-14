@@ -29,6 +29,7 @@
 
 .mainNavBar li:hover{
   color: red;
+  cursor:pointer;
 }
 
 .selected{
