@@ -10,6 +10,17 @@
 .logo{
   float: left;
   padding: 10px 70px;
+  width: 15%;
+}
+
+.logo_image_desktop {
+  width: 200px;
+  height: auto;
+}
+
+.logo_image_mobile {
+  width: 150px;
+  height: auto;
 }
 
 .navHead ul{
@@ -43,7 +54,7 @@
   right: 36px;
   width: 36px;
   height: 30px;
-  top: 36px;
+  top: 30px;
 }
 
 /* Color/shape of burger icon bars */

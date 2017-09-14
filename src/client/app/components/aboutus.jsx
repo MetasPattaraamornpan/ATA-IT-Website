@@ -10,7 +10,7 @@ export default class AboutUs extends React.Component {
         <Row>
           <Col xs >
             <div style={{paddingTop: '80px', lineHeight: '44px'}}>
-              <h1>ABOUT US</h1>
+              <h1>About Us</h1>
             </div>
             <div>
               <h3>
