@@ -1,5 +1,6 @@
 import React from "react"
 import './styles/home.css';
+import './styles/flip.css';
 import { Desktop, Mobile } from './device'
 import Logo from './logo';
 import AboutUs from './aboutus.jsx'
@@ -43,7 +44,14 @@ export default class Navbar extends React.Component {
       <div className="homeContent">
         <section className="topSection">
           <article style={{width:'100%', height:'100%'}}>
-            <Logo/>
+          <div id="container">
+          Efficiency in
+          <div id="flip">
+            <div><div>Motion</div></div><br/>
+            <div><div>Work</div></div><br/>
+            <div><div>Everything</div></div><br/>
+          </div>
+          </div>
           </article>
         </section>
         <AboutUs />
