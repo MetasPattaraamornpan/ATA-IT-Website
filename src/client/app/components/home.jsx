@@ -41,7 +41,7 @@ export default class Navbar extends React.Component {
 
   render () {
     return (
-      <div className="homeContent">
+      <div className="homeContent" ref={(section) => { this.Home = section; }}>
         <section className="topSection">
           <article style={{width:'100%', height:'100%'}}>
           <div id="container">

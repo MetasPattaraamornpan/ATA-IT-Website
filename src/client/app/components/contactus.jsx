@@ -5,7 +5,7 @@ import { Row, Col } from 'react-flexbox-grid';
 export default class ContactUs extends React.Component {
   render () {
     return (
-      <div className="contactusContent">
+      <div className="contactusContent" ref={(section) => { this.ContactUs = section; }}>
         <Row center="xs">
           <Col xs={6}>
             <h1>Contact Us</h1>

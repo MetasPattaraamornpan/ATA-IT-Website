@@ -17,18 +17,7 @@ const backdropStyle = {
 };
 
 const dialogStyle = function() {
-  let top = 25;
-  // let left = 40;
-
   return {
-    // position: 'absolute',
-    // width: '55%',
-    // top: top + '%', left: left + '%',
-    // transform: `translate(-${top}%, -${left}%)`,
-    // border: '1px solid #e5e5e5',
-    // backgroundColor: 'white',
-    // boxShadow: '0 5px 15px rgba(0,0,0,.5)',
-    // padding: 20
     border: '0',
     borderRadius: '4px',
     bottom: 'auto',
@@ -135,7 +124,7 @@ export default class Team extends React.Component{
 
   render () {
     return (
-      <div className="teamContent">
+      <div className="teamContent" ref={(section) => { this.Team = section; }}>
         <Row className="teamRow" center="xs">
           <Col xs={6}>
             <h1>Our Teams</h1>
@@ -215,7 +204,7 @@ export default class Team extends React.Component{
           <div className="teamModal" style={dialogStyle()} >
             <Row>
               <Col>
-                <img style={{padding: '10% 0px'}} src={`${this.team_item[0].icon}White.png`} />
+                <img style={{padding: '10% 0px'}} src={`${this.state.modal.icon}White.png`} />
               </Col>
               <Col xs>
                 <h2 >{this.state.modal.header}</h2>

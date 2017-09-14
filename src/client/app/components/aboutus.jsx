@@ -6,7 +6,7 @@ import {Desktop, Mobile } from "./device"
 export default class AboutUs extends React.Component {
   render () {
     return (
-      <div className="aboutusContent">
+      <div className="aboutusContent" ref={(section) => { this.AboutUs = section; }}>
         <Row>
           <Col xs >
             <div style={{paddingTop: '80px', lineHeight: '44px'}}>
