@@ -11,7 +11,6 @@ export default class App extends React.Component {
         <div>
           <Navbar />
           <Home />
-          <Footer />
         </div>
     );
   }

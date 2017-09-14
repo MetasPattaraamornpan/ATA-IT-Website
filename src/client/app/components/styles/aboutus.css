@@ -1,0 +1,16 @@
+.aboutusContent{
+  position: relative;
+  margin: 0px 10%;
+}
+
+.aboutusContent h3{
+  font-family: Arial;
+  color: #003450;
+  font-Weight: 400;
+}
+
+.aboutusContent h3 front{
+  line-height: 20px;
+  font-size: 18px;
+  box-sizing: border-box;
+}

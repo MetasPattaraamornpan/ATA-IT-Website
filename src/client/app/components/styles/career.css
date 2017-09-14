@@ -1,0 +1,32 @@
+
+.careerContent{
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-color: FFF;
+  margin: 20px 15%;
+}
+
+.careerContent h3{
+  font-family: Arial;
+  color: #003450;
+  font-Weight: 400;
+}
+
+.careerContent h3 front{
+  line-height: 20px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.careerContent button{
+  border-radius: 0px;
+  background-color: rgb(255, 0, 0);
+  color: #FFFFFF;
+  border-color: #DB5C21;
+  font-size: 14px;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}

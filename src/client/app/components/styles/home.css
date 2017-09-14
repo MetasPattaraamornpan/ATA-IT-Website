@@ -11,31 +11,8 @@
   top: 100px;
 }
 
-.containerHolder{
-  position: relative;
-  margin: 0px 10%;
-}
-
-.container50 {
-  width: 50%;
-  margin: 0px 0px;
-}
-
-.containerHolder h1{
+h1{
   line-height: 44px;
   font-family: Arial;
   color: rgb(248, 58, 34);
-}
-
-.containerHolder h3{
-  font-family: Arial;
-  color: #484b54;
-  font-Weight: 400;
-}
-
-.containerHolder h3 font{
-  line-height: 18px;
-  font-size: 14px;
-  box-sizing: border-box;
-  text-size-adjust: 100%;
 }

@@ -1,0 +1,27 @@
+
+.teamContent{
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-color: rgb(230, 230, 230);
+}
+
+img{
+  float: right;
+}
+
+.teamRow{
+  margin: 20px 15%;
+}
+
+.teamContent h2{
+  font-family: Arial;
+  color: #003450;
+  font-Weight: bold;
+  word-wrap: break-word;
+}
+
+.teamContent h2 front{
+  line-height: 24px;
+  font-size: 22px;
+  box-sizing: border-box;
+}

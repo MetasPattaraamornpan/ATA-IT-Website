@@ -1,0 +1,36 @@
+
+.contactusContent{
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-color: rgb(230, 230, 230);
+  position: relative;
+}
+
+.contactusRow{
+  margin: 20px 15%;
+}
+
+.contactusRow h2{
+  font-family: Arial;
+  color: #003450;
+  font-Weight: bold;
+  word-wrap: break-word;
+}
+
+.contactusRow h2 front{
+  line-height: 24px;
+  font-size: 22px;
+  box-sizing: border-box;
+}
+
+.contactusRow h3{
+  font-family: Arial;
+  color: #003450;
+  font-Weight: 400;
+}
+
+.contactusRow h3 front{
+  line-height: 20px;
+  font-size: 18px;
+  box-sizing: border-box;
+}

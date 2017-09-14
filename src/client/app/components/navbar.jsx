@@ -13,8 +13,6 @@ export default class Navbar extends React.Component {
   };
 
   render () {
-
-
       return (
         <div style={{position: 'fixed', zIndex: 999}}>
           <Desktop >
@@ -24,7 +22,8 @@ export default class Navbar extends React.Component {
                   <img src="./app/components/images/logo.jpg" />
                 </div>
                 <ul className="mainNavBar">
-                  <li className="menuHeader selected">ABOUT US</li>
+                  <li className="menuHeader selected">HOME</li>
+                  <li className="menuHeader">ABOUT US</li>
                   <li className="menuHeader">PRODUCT CATALOG</li>
                   <li className="menuHeader">CARREERS</li>
                   <li className="menuHeader">CONTACT US</li>
@@ -40,6 +39,7 @@ export default class Navbar extends React.Component {
                 </div>
                 <Menu id="stack" right customBurgerIcon={ <img src="./app/components/images/menu_icon.png" /> }>
                   <ul className="menuBurger">
+                    <li className="menuHeader selected">HOME</li>
                     <li className="menu-item">ABOUT US</li>
                     <li className="menu-item">PRODUCT CATALOG</li>
                     <li className="menu-item">CARREERS</li>
