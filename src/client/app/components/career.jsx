@@ -5,7 +5,7 @@ import { Row, Col } from 'react-flexbox-grid';
 export default class Career extends React.Component {
   render () {
     return (
-      <div className="careerContent">
+      <div className="careerContent" ref={(section) => { this.Career = section; }}>
         <Row>
           <Col sm={3}>
             <img style={{width:'100%', padding: '25% 0px'}} src="./app/components/images/career_00.jpeg"/>
@@ -22,7 +22,7 @@ export default class Career extends React.Component {
               </h3>
             </Row>
             <Row>
-              <button className={{button: true}}>JOIN US</button>
+              <button>JOIN US</button>
             </Row>
           </Col>
         </Row>
