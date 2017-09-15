@@ -6,6 +6,12 @@
   margin: 20px 15%;
 }
 
+.careerContent-mobile{
+  padding-top: 30px;
+  background-color: FFF;
+  margin: 20px 15%;
+}
+
 .careerContent h3{
   font-family: Arial;
   color: #003450;
