@@ -2,39 +2,7 @@ import './styles/team.css';
 import React from "react"
 import { Row, Col } from 'react-flexbox-grid';
 import Modal from 'react-overlays/lib/Modal';
-
-const modalStyle = {
-  position: 'fixed',
-  zIndex: 1040,
-  top: 0, bottom: 0, left: 0, right: 0
-};
-
-const backdropStyle = {
-  ...modalStyle,
-  zIndex: 'auto',
-  backgroundColor: '#000',
-  opacity: 0.5
-};
-
-const dialogStyle = function() {
-  return {
-    border: '0',
-    borderRadius: '4px',
-    bottom: 'auto',
-    minHeight: '10rem',
-    left: '50%',
-    padding: '2rem',
-    position: 'fixed',
-    right: 'auto',
-    top: '50%',
-    transform: 'translate(-50%,-50%)',
-    minWidth: '20rem',
-    width: '80%',
-    maxWidth: '60rem',
-    border: '1px solid #e5e5e5',
-    backgroundColor: 'white',
-  };
-};
+import ReactModal from 'react-modal';
 
 export default class Team extends React.Component{
   state = {
@@ -194,14 +162,22 @@ export default class Team extends React.Component{
             </Row>
           </Col>
         </Row>
-        <Modal
-          aria-labelledby='modal-label'
-          style={modalStyle}
-          backdropStyle={backdropStyle}
-          show={this.state.showModal}
-          onHide={this.close}
+        <ReactModal
+           isOpen={this.state.showModal}
+           contentLabel="Inline Styles Modal Example"
+           shouldCloseOnOverlayClick={true}
+           onRequestClose={this.close}
+           className="reactModal"
+           style={{
+              overlay: {
+                backgroundColor: 'rgba(0,0,0,0.5)',
+                position: 'fixed',
+                zIndex: '1040'
+              }
+            }}
+
         >
-          <div className="teamModal" style={dialogStyle()} >
+          <div className="teamModal" >
             <Row>
               <Col>
                 <img style={{padding: '10% 0px'}} src={`${this.state.modal.icon}White.png`} />
@@ -215,7 +191,7 @@ export default class Team extends React.Component{
               <h3 >{this.state.modal.detail}</h3>
             </Row>
           </div>
-        </Modal>
+        </ReactModal>
       </div>
     )
   };

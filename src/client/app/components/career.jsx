@@ -24,7 +24,7 @@ export default class Career extends React.Component {
               </h3>
             </Row>
             <Row>
-              <button>JOIN US</button>
+              <button onClick={this.openMail}>JOIN US</button>
             </Row>
           </Col>
         </Row>
@@ -54,4 +54,8 @@ export default class Career extends React.Component {
       </div>
     )
   };
+
+  openMail = () => {
+    window.location.href = "mailto:info@ata-it-th.com";
+  }
 }
