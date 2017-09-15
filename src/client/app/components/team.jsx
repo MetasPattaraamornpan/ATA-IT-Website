@@ -59,7 +59,7 @@ export default class Team extends React.Component{
         • Build and maintain documentation for reports and queries`
     },{
       icon: './app/components/images/IT_Security_',
-      header: 'IT Security',
+      header: 'IT Security Monitoring',
       detail: `Handle all the SIEM administration, configuration and Support
         • Source management
         • Rule Maintenance
