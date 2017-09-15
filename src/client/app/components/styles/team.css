@@ -55,3 +55,25 @@
   font-size: 18px;
   box-sizing: border-box;
 }
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.reactModal {
+  border: 0;
+  border-radius: 4px;
+  bottom: auto;
+  min-height: 10rem;
+  left: 50%;
+  padding: 2rem;
+  position: fixed;
+  right: auto;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  min-width: 20rem;
+  width: 80%;
+  max-width: 60rem;
+  border: 1px solid #e5e5e5;
+  background-color: white;
+}
