@@ -42,7 +42,7 @@ export default class AboutUs extends React.Component {
               </h3>
             </div>
           <div>
-            <img style={{margin:'10% 0px'}} src="./app/components/images/aboutus_01.png"/>
+            <img style={{margin:'10% 0px', width:'100%'}} src="./app/components/images/aboutus_01.png"/>
           </div>
       </Mobile>
       </div>
