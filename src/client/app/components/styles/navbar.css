@@ -43,10 +43,6 @@
   cursor:pointer;
 }
 
-.selected{
-  color:  rgb(228, 32, 36) !important;
-}
-
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -93,18 +89,17 @@
   text-align: right;
 }
 
+.menuBurger li:hover{
+  color: red;
+  cursor:pointer;
+}
+
 .menu-item{
-  display: inline-block;
+  display: block;
   padding: 15px 0vw;
   color: rgb(122, 129, 124);
   font-size: 20;
   margin: 0;
-  /*display: inline-block;
-  padding: 10px 0vw;
-  color: rgb(122, 129, 124);
-  font-size: 20;
-  margin: 0;*/
-
 }
 
 /* Styling of overlay */

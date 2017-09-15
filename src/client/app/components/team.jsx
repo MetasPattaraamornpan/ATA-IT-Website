@@ -1,7 +1,6 @@
 import './styles/team.css';
 import React from "react"
 import { Row, Col } from 'react-flexbox-grid';
-import Modal from 'react-overlays/lib/Modal';
 import ReactModal from 'react-modal';
 
 export default class Team extends React.Component{
