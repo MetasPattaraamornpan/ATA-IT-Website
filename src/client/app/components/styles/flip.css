@@ -6,10 +6,10 @@
   text-align:center;
 }
 
-#container-mobile{
+.flip-container-mobile{
   color:#ffffff;
   text-transform: uppercase;
-  font-size:60px;
+  font-size:50px;
   font-weight:bold;
   padding-top:15%;
   width:100%;
@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-#container-desktop{
+.flip-container-desktop{
   color:#ffffff;
   text-transform: uppercase;
   font-size:60px;
