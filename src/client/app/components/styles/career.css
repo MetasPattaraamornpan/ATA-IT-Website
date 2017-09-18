@@ -10,6 +10,7 @@
   padding-top: 30px;
   background-color: FFF;
   margin: 20px 15%;
+  text-align: center;
 }
 
 .careerContent h3{
@@ -22,6 +23,11 @@
   line-height: 20px;
   font-size: 18px;
   box-sizing: border-box;
+}
+
+.careerContent-bgimage {
+  background: url(/app/components/images/career_00.jpeg);
+  background-size: cover;
 }
 
 .careerContent button{

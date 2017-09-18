@@ -6,34 +6,36 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 class Footer extends React.Component{
   render(){
     return (
-      <div className="footer">
+      <div>
         <Desktop>
-            <div className="textContainer">
-                <p className="heading-menu"><font color="#ffffff">© ATA IT Limited. All rights reserved 2017.</font></p>
+          <div className="footer-desktop">
+            <div className="textContainer-desktop">
+                <p>© ATA IT Limited. All rights reserved 2017.</p>
             </div>
-            <div className="socialLink">
+            <div className="socialLink-desktop">
                 <a href="https://www.facebook.com/advancedtechnologyofasia/" rel="nofollow">
                   <div className="socialLink-icon socialLink-facebook-icon"/>
                 </a>
-                <div className="socialLink-icon socialLink-instagram-icon"/>
                 <a href="https://www.linkedin.com/company/ata-it-limited" rel="nofollow">
                   <div className="socialLink-icon socialLink-linkedin-icon"/>
                 </a>
             </div>
+          </div>
         </Desktop>
         <Mobile>
-        <div className="textContainer">
-            <p className="heading-menu"><font color="#ffffff">© ATA IT Limited. All rights reserved 2017.</font></p>
-        </div>
-        <div className="socialLink">
-            <a href="https://www.facebook.com/advancedtechnologyofasia/" rel="nofollow">
-              <div className="socialLink-icon socialLink-facebook-icon"/>
-            </a>
-            <div className="socialLink-icon socialLink-instagram-icon"/>
-            <a href="https://www.linkedin.com/company/ata-it-limited" rel="nofollow">
-              <div className="socialLink-icon socialLink-linkedin-icon"/>
-            </a>
-        </div>
+          <div className="footer-mobile">
+            <div className="socialLink-mobile">
+              <a href="https://www.facebook.com/advancedtechnologyofasia/" rel="nofollow">
+                <div className="socialLink-icon socialLink-facebook-icon"/>
+              </a>
+              <a href="https://www.linkedin.com/company/ata-it-limited" rel="nofollow">
+                <div className="socialLink-icon socialLink-linkedin-icon"/>
+              </a>
+            </div>
+            <div className="textContainer-mobile">
+                <p>© ATA IT Limited. All rights reserved 2017.</p>
+            </div>
+          </div>
         </Mobile>
       </div>
     );
