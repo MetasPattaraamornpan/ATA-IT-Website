@@ -8,7 +8,8 @@ export default class Team extends React.Component{
   state = {
     showModal: false,
     modal:{
-      icon: '',
+      icon_grey: '',
+      icon_white: '',
       header: '',
       detail: ''
     }
@@ -16,7 +17,8 @@ export default class Team extends React.Component{
 
   team_item = [
     {
-      icon: './app/components/images/Core_Banking_Icon_',
+      icon_grey: './app/components/images/Core_Banking_Icon_Grey.png',
+      icon_white: './app/components/images/Core_Banking_Icon_White.png',
       header: 'Core Banking System',
       detail: `ATA IT offers core banking solutions employing Flexcube and Bankflex to provide business consulting, support and development services for banking systems.
 
@@ -32,13 +34,15 @@ export default class Team extends React.Component{
         • Development of digital channels
         • Provide services configured to Achieve business requirements and Develop new business requirements`
     },{
-      icon: './app/components/images/Mobile_&_Web_',
+      icon_grey: './app/components/images/Mobile_&_Web_Grey.png',
+      icon_white: './app/components/images/Mobile_&_Web_White.png',
       header: 'Mobile & Web Banking Development',
       detail: `ATA Development Team designs and develops website, mobile application and solutions related to financial services.
 
       Our developers are working with AGILE method to ensure quality and efficiency. `
     },{
-      icon: './app/components/images/QA_',
+      icon_grey: './app/components/images/QA_Grey.png',
+      icon_white: './app/components/images/QA_White.png',
       header: 'Quality Assurance',
       detail: `Quality Assurance at ATA IT is providing testing service to certify that products fit their purpose without undesirable effects when used outside of its design parameters and in worst case fails safely.
 
@@ -49,7 +53,8 @@ export default class Team extends React.Component{
         • Functional Testing: smoke testing, integration testing,  system testing, regression testing, user acceptance testing
         • Non-Functional Testing: Capacity and Performance Testing and security testing`
     },{
-      icon: './app/components/images/IT_Dashboard_',
+      icon_grey: './app/components/images/IT_Dashboard_Grey.png',
+      icon_white: './app/components/images/IT_Dashboard_White.png',
       header: 'IT Dashboard',
       detail: `• Develop dashboards to support IT operations management as per provided requirements by developing web modules, relational model (OLAP) and complex queries
         • Testing and maintenance of IT dashboards
@@ -58,7 +63,8 @@ export default class Team extends React.Component{
         • Automation of reporting tasks
         • Build and maintain documentation for reports and queries`
     },{
-      icon: './app/components/images/IT_Security_',
+      icon_grey: './app/components/images/IT_Security_Grey.png',
+      icon_white: './app/components/images/IT_Security_White.png',
       header: 'IT Security Monitoring',
       detail: `Handle all the SIEM administration, configuration and Support
         • Source management
@@ -78,7 +84,8 @@ export default class Team extends React.Component{
         • Analyze, identify, contain, communicate, and document the intrusion
         • Incident Report outlining scope of the incident, how the intruder entered the network, containment of the threat, and the remediation necessary to correct the damage`
     },{
-      icon: './app/components/images/Operation_Monitoring_',
+      icon_grey: './app/components/images/Operation_Monitoring_Grey.png',
+      icon_white: './app/components/images/Operation_Monitoring_White.png',
       header: 'Operation Monitoring',
       detail: `ATA IT Operation Monitoring team offers 24/7 operator service that provides support to insure the availability of the IT to fully operate anytime.
 
@@ -88,15 +95,23 @@ export default class Team extends React.Component{
 
         Our team operates 24/7 including overnight, shift hours, weekends, and holidays.`
     },{
-      icon: './app/components/images/Operation_Monitoring_',
+      icon_grey: './app/components/images/IT_Infra_Grey.png',
+      icon_white: './app/components/images/IT_Infra_White.png',
       header: 'IT Infrastructure ',
-      detail: `IT Infrastructure Detail`
+      detail: `System administrator takes care of all the IT infrastructure equipment of the Bank and the customer. We are working on infrastructure that provides :
+        • Enterprise server
+        • Enterprise storage
+        • Enterprise network
+        • Linux and Middleware
+        • Collaboration with app team for core banking systems`
     },{
-      icon: './app/components/images/Operation_Monitoring_',
+      icon_grey: './app/components/images/Disaster_Recover_Grey.png',
+      icon_white: './app/components/images/Disaster_Recover_White.png',
       header: 'Disaster Recovery',
       detail: `Disaster Recovery Detail`
     },{
-      icon: '',
+      icon_grey: '#',
+      icon_white: '#',
       header: '',
       detail: ``
     }]
@@ -129,11 +144,10 @@ export default class Team extends React.Component{
           <div className="teamModal" >
             <Row>
               <Col>
-                <img style={{padding: '10% 0px'}} src={`${this.state.modal.icon}White.png`} />
+                <img style={{padding: '10% 0px'}} src={this.state.modal.icon_white} />
               </Col>
               <Col xs>
                 <h2 >{this.state.modal.header}</h2>
-                <h3 >{this.state.modal.header}</h3>
               </Col>
             </Row>
             <Row>
@@ -163,7 +177,7 @@ export default class Team extends React.Component{
     return teamRow.map((teamCol,i) => (
       <Row className="teamRow" key={i}>
         {teamCol.map((team,j)=>{
-          return <Col key={j} xs><Row><Col xs><img src={team.icon+"Grey.png"} onClick={() => {this.open(i*3+j)}}/></Col><Col xs><h2><front onClick={() => {this.open(i*3+j)}}>{team.header}</front></h2></Col></Row></Col>
+          return <Col key={j} xs><Row><Col xs><img src={team.icon_grey} onClick={() => {this.open(i*3+j)}}/></Col><Col xs><h2><front onClick={() => {this.open(i*3+j)}}>{team.header}</front></h2></Col></Row></Col>
         })}
       </Row>
     ));
