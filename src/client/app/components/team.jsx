@@ -94,27 +94,29 @@ export default class Team extends React.Component{
         Escalation - Monitor the IT activity and notice support team in case unusual activity.
 
         Our team operates 24/7 including overnight, shift hours, weekends, and holidays.`
-    },{
-      icon_grey: './app/components/images/IT_Infra_Grey.png',
-      icon_white: './app/components/images/IT_Infra_White.png',
-      header: 'IT Infrastructure ',
-      detail: `System administrator takes care of all the IT infrastructure equipment of the Bank and the customer. We are working on infrastructure that provides :
-        • Enterprise server
-        • Enterprise storage
-        • Enterprise network
-        • Linux and Middleware
-        • Collaboration with app team for core banking systems`
-    },{
-      icon_grey: './app/components/images/Disaster_Recover_Grey.png',
-      icon_white: './app/components/images/Disaster_Recover_White.png',
-      header: 'Disaster Recovery',
-      detail: `Disaster Recovery Detail`
-    },{
-      icon_grey: '#',
-      icon_white: '#',
-      header: '',
-      detail: ``
-    }]
+    }
+    // ,{
+    //   icon_grey: './app/components/images/IT_Infra_Grey.png',
+    //   icon_white: './app/components/images/IT_Infra_White.png',
+    //   header: 'IT Infrastructure ',
+    //   detail: `System administrator takes care of all the IT infrastructure equipment of the Bank and the customer. We are working on infrastructure that provides :
+    //     • Enterprise server
+    //     • Enterprise storage
+    //     • Enterprise network
+    //     • Linux and Middleware
+    //     • Collaboration with app team for core banking systems`
+    // },{
+    //   icon_grey: './app/components/images/Disaster_Recover_Grey.png',
+    //   icon_white: './app/components/images/Disaster_Recover_White.png',
+    //   header: 'Disaster Recovery',
+    //   detail: `Disaster Recovery Detail`
+    // },{
+    //   icon_grey: '#',
+    //   icon_white: '#',
+    //   header: '',
+    //   detail: ``
+    // }
+  ]
 
   render () {
     return (
