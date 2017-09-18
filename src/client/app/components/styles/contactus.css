@@ -68,18 +68,3 @@
   font-size: 18px;
   box-sizing: border-box;
 }
-
-.contactusContent #mobile .contactusInfo {
-  display: inline-block;
-  width: 40%;
-}
-
-.contactusContent #mobile .contactusInfo-header h3{
-  font-Weight: bold;
-  text-align: left;
-  font-size: 18px;
-}
-
-.contactusContent #mobile .contactusInfo-info h3{
-  text-align: right;
-}
