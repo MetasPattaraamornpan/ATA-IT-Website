@@ -45,7 +45,7 @@ export default class Navbar extends React.Component {
         <section className="topSection">
           <article style={{width:'100%', height:'100%'}}>
             <Desktop>
-              <div id="container-desktop">
+              <div className="flip-container-desktop">
                 Efficiency in
                 <div id="flip">
                   <div><div>Motion</div></div><br/>
@@ -55,7 +55,7 @@ export default class Navbar extends React.Component {
               </div>
             </Desktop>
             <Mobile>
-              <div id="container-mobile">
+              <div className="flip-container-mobile">
                 Efficiency in
                 <div id="flip">
                   <div><div>Motion</div></div><br/>
