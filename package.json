@@ -19,7 +19,6 @@
     "https": "^1.0.0",
     "path": "^0.12.7",
     "react": "^15.6.1",
-    "react-bootstrap": "^0.31.3",
     "react-burger-menu": "^2.1.6",
     "react-dom": "^15.6.1",
     "react-flexbox-grid": "^1.1.5",

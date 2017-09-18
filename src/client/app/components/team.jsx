@@ -36,7 +36,7 @@ export default class Team extends React.Component{
     },{
       icon_grey: './app/components/images/Mobile_&_Web_Grey.png',
       icon_white: './app/components/images/Mobile_&_Web_White.png',
-      header: 'Mobile & Web Banking Development',
+      header: `Mobile & Web Banking \nDevelopment`,
       detail: `ATA Development Team designs and develops website, mobile application and solutions related to financial services.
 
       Our developers are working with AGILE method to ensure quality and efficiency. `
@@ -177,7 +177,28 @@ export default class Team extends React.Component{
     return teamRow.map((teamCol,i) => (
       <Row className="teamRow" key={i}>
         {teamCol.map((team,j)=>{
-          return <Col key={j} xs><Row><Col xs><img src={team.icon_grey} onClick={() => {this.open(i*3+j)}}/></Col><Col xs><h2><front onClick={() => {this.open(i*3+j)}}>{team.header}</front></h2></Col></Row></Col>
+          return (
+            <Col key={j} xs>
+              {team.icon_grey != "#" ? (
+                <Row>
+                  <Col>
+                    <img src={team.icon_grey} onClick={() => {this.open(i*3+j)}}/>
+                  </Col>
+                  <Col>
+                    <h2>
+                    <front onClick={() => {this.open(i*3+j)}}>{team.header}</front>
+                    </h2>
+                  </Col>
+                </Row>
+              ) : (
+                <Row>
+                  <Col>
+                  </Col>
+                  <Col>
+                  </Col>
+                </Row>
+              )}
+            </Col>)
         })}
       </Row>
     ));

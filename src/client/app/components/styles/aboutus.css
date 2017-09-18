@@ -1,6 +1,14 @@
-.aboutusContent{
+.aboutusContent #mobile {
+  max-width: 460px;
   position: relative;
-  margin: 0px 10%;
+  margin: 0px auto;
+
+}
+
+.aboutusContent #desktop {
+  max-width: 1024px;
+  position: relative;
+  margin: 0px auto;
 }
 
 .aboutusContent h3{

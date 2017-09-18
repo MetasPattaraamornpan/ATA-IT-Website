@@ -11,8 +11,8 @@ export default class App extends React.Component {
         <div>
           <Navbar />
           <div style={{position: 'relative', top: '100px'}}>
-            <Home />
-            <Footer />
+              <Home />
+              <Footer />
           </div>
         </div>
     );

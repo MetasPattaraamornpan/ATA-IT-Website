@@ -6,7 +6,7 @@
 }
 
 .teamContent img{
-  float: right;
+  float:left;
 }
 
 .teamContent img:hover, h2{
@@ -14,14 +14,16 @@
 }
 
 .teamRow{
-  margin: 20px 15%;
+  margin: 20px auto;
 }
 
 .teamContent h2{
+  float:left;
   font-family: Arial;
   color: #003450;
   font-Weight: bold;
   word-wrap: break-word;
+  white-space: pre-line;
 }
 
 .teamContent h2 front{
@@ -57,7 +59,7 @@
 }
 
 .ReactModal__Body--open {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .reactModal {
