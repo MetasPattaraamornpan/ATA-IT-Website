@@ -1,20 +1,31 @@
 
-.teamContent{
+.teamContent  {
   padding-top: 30px;
   padding-bottom: 60px;
   background-color: rgb(230, 230, 230);
 }
 
-.teamContent img{
+.teamContent #desktop{
+  max-width: 1100px;
+  margin: 0px auto;
+}
+
+.teamContent #mobile {
+  max-width: 400px;
+  margin: 0px auto;
+}
+.teamContent #desktop img{
   float:left;
+}
+
+.teamContent #mobile  img{
+  float:left;
+  width: 48px;
+  height: 48px;
 }
 
 .teamContent img:hover, h2{
  cursor:pointer;
-}
-
-.teamRow{
-  margin: 20px auto;
 }
 
 .teamContent h2{
@@ -26,9 +37,15 @@
   white-space: pre-line;
 }
 
-.teamContent h2 front{
+.teamContent #desktop h2 front{
   line-height: 24px;
   font-size: 22px;
+  box-sizing: border-box;
+}
+
+.teamContent #mobile h2 front{
+  line-height: 19px;
+  font-size: 18px;
   box-sizing: border-box;
 }
 
@@ -37,6 +54,12 @@
   color: #003450;
   font-Weight: bold;
   word-wrap: break-word;
+}
+
+.teamModal h2 front{
+  line-height: 24px;
+  font-size: 22px;
+  box-sizing: border-box;
 }
 
 .teamModal h2 front{

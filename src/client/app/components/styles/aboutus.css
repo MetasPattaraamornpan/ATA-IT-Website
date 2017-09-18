@@ -2,7 +2,6 @@
   max-width: 460px;
   position: relative;
   margin: 0px auto;
-
 }
 
 .aboutusContent #desktop {
@@ -27,4 +26,9 @@
   line-height: 15px;
   font-size: 14px;
   box-sizing: border-box;
+}
+
+.aboutusContent #mobile h3 img{
+  width: 320px;
+  height: 320px;
 }

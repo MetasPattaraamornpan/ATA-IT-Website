@@ -43,9 +43,9 @@ export default class Navbar extends React.Component {
                   <ul className="menuBurger">
                     <li className="menu-item" onClick={() => {this.goTo(0)}}>HOME</li>
                     <li className="menu-item" onClick={() => {this.goTo(205)}}>ABOUT US</li>
-                    <li className="menu-item" onClick={() => {this.goTo(834)}}>OUR TEAMS</li>
-                    <li className="menu-item" onClick={() => {this.goTo(1386)}}>CAREERS</li>
-                    <li className="menu-item" onClick={() => {this.goTo(1773)}}>CONTACT US</li>
+                    <li className="menu-item" onClick={() => {this.goTo(1047)}}>OUR TEAMS</li>
+                    <li className="menu-item" onClick={() => {this.goTo(1746)}}>CAREERS</li>
+                    <li className="menu-item" onClick={() => {this.goTo(2488)}}>CONTACT US</li>
                   </ul>
                 </Menu>
               </div>

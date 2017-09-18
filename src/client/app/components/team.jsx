@@ -156,6 +156,43 @@ export default class Team extends React.Component{
           </div>
         </ReactModal>
       </Desktop>
+      <Mobile>
+        <Row className="teamRow" center="xs">
+          <Col xs={6}>
+            <h1>Our Teams</h1>
+          </Col>
+        </Row>
+        {this.teamTable()}
+        <ReactModal
+           isOpen={this.state.showModal}
+           contentLabel="Inline Styles Modal Example"
+           shouldCloseOnOverlayClick={true}
+           onRequestClose={this.close}
+           className="reactModal"
+           style={{
+              overlay: {
+                backgroundColor: 'rgba(0,0,0,0.5)',
+                position: 'fixed',
+                zIndex: '1040'
+              }
+            }}
+
+        >
+          <div className="teamModal" >
+            <Row>
+              <Col>
+                <img style={{padding: '10% 0px'}} src={this.state.modal.icon_white} />
+              </Col>
+              <Col xs>
+                <h2 >{this.state.modal.header}</h2>
+              </Col>
+            </Row>
+            <Row>
+              <h3 >{this.state.modal.detail}</h3>
+            </Row>
+          </div>
+        </ReactModal>
+      </Mobile>
       </div>
     )
   };
