@@ -1,9 +1,18 @@
 
-.contactusContent{
+.contactusContent {
   padding-top: 30px;
-  padding-bottom: 60px;
   background-color: rgb(230, 230, 230);
   position: relative;
+}
+
+.contactusContent #desktop{
+  padding-bottom: 60px;
+}
+
+.contactusContent #mobile{
+  padding-bottom: 20px;
+  color: #003450;
+  font-family: Arial;
 }
 
 .contactusRow{
@@ -19,7 +28,7 @@
 
 .contactusRow h2 front{
   line-height: 24px;
-  font-size: 22px;
+  font-size: 20px;
   box-sizing: border-box;
 }
 
@@ -31,6 +40,46 @@
 
 .contactusRow h3 front{
   line-height: 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.contactusContent #mobile{
+  padding-bottom: 10px;
+  color: #003450;
+  font-family: Arial;
+}
+
+.contactusContent #mobile h2{
+  font-family: Arial;
+  color: #003450;
+  font-Weight: bold;
+  word-wrap: break-word;
+  line-height: 24px;
+  font-size: 22px;
+  box-sizing: border-box;
+}
+
+.contactusContent #mobile h3{
+  font-family: Arial;
+  color: #003450;
+  font-Weight: 400;
+  line-height: 20px;
   font-size: 18px;
   box-sizing: border-box;
+}
+
+.contactusContent #mobile .contactusInfo {
+  display: inline-block;
+  width: 40%;
+}
+
+.contactusContent #mobile .contactusInfo-header h3{
+  font-Weight: bold;
+  text-align: left;
+  font-size: 18px;
+}
+
+.contactusContent #mobile .contactusInfo-info h3{
+  text-align: right;
 }
