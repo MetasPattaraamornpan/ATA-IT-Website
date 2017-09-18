@@ -6,7 +6,7 @@ import {Desktop, Mobile } from "./device"
 export default class Career extends React.Component {
   render () {
     return (
-      <div className="careerContent" ref={(section) => { this.Career = section; }}>
+      <div className="careerContent" >
         <Desktop>
         <Row>
           <Col sm={3}>

@@ -10,8 +10,15 @@
   z-index: 99;
 }
 
-h1{
+#desktop h1{
   line-height: 44px;
+  font-family: Arial;
+  color: rgb(248, 58, 34);
+}
+
+#mobile h1{
+  line-height: 25px;
+  font-size: 24px;
   font-family: Arial;
   color: rgb(248, 58, 34);
 }

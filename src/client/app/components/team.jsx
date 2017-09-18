@@ -2,6 +2,7 @@ import './styles/team.css';
 import React from "react"
 import { Row, Col } from 'react-flexbox-grid';
 import ReactModal from 'react-modal';
+import {Desktop, Mobile } from "./device"
 
 export default class Team extends React.Component{
   state = {
@@ -86,81 +87,30 @@ export default class Team extends React.Component{
         Escalation - Monitor the IT activity and notice support team in case unusual activity.
 
         Our team operates 24/7 including overnight, shift hours, weekends, and holidays.`
-    }
-  ]
+    },{
+      icon: './app/components/images/Operation_Monitoring_',
+      header: 'IT Infrastructure ',
+      detail: `IT Infrastructure Detail`
+    },{
+      icon: './app/components/images/Operation_Monitoring_',
+      header: 'Disaster Recovery',
+      detail: `Disaster Recovery Detail`
+    },{
+      icon: '',
+      header: '',
+      detail: ``
+    }]
 
   render () {
     return (
-      <div className="teamContent" ref={(section) => { this.Team = section; }}>
+      <div className="teamContent" >
+      <Desktop>
         <Row className="teamRow" center="xs">
           <Col xs={6}>
             <h1>Our Teams</h1>
           </Col>
         </Row>
-        <Row className="teamRow">
-          <Col xs>
-            <Row>
-              <Col xs><img src={`${this.team_item[0].icon}Grey.png`} onClick={() => {this.open(0)}}/></Col>
-              <Col xs>
-                <h2>
-                  <front onClick={() => {this.open(0)}}>{this.team_item[0].header}</front>
-                </h2>
-              </Col>
-            </Row>
-          </Col>
-          <Col xs>
-            <Row>
-              <Col xs><img src={`${this.team_item[1].icon}Grey.png`} onClick={() => {this.open(1)}}/></Col>
-              <Col xs>
-                <h2>
-                  <front onClick={() => {this.open(1)}}>{this.team_item[1].header}</front>
-                </h2>
-              </Col>
-            </Row>
-          </Col>
-          <Col xs>
-            <Row>
-              <Col xs><img src={`${this.team_item[2].icon}Grey.png`} onClick={() => {this.open(2)}}/></Col>
-              <Col xs>
-                <h2>
-                  <front onClick={() => {this.open(2)}}>{this.team_item[2].header}</front>
-                </h2>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-        <Row className="teamRow">
-          <Col xs>
-            <Row>
-              <Col xs><img src={`${this.team_item[3].icon}Grey.png`} onClick={() => {this.open(3)}}/></Col>
-              <Col xs>
-                <h2>
-                  <front onClick={() => {this.open(3)}}>{this.team_item[3].header}</front>
-                </h2>
-              </Col>
-            </Row>
-          </Col>
-          <Col xs>
-            <Row>
-              <Col xs><img src={`${this.team_item[4].icon}Grey.png`} onClick={() => {this.open(4)}}/></Col>
-              <Col xs>
-                <h2>
-                  <front onClick={() => {this.open(4)}}>{this.team_item[4].header}</front>
-                </h2>
-              </Col>
-            </Row>
-          </Col>
-          <Col xs>
-            <Row>
-              <Col xs><img src={`${this.team_item[5].icon}Grey.png`} onClick={() => {this.open(5)}}/></Col>
-              <Col xs>
-                <h2>
-                  <front onClick={() => {this.open(5)}}>{this.team_item[5].header}</front>
-                </h2>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+        {this.teamTable()}
         <ReactModal
            isOpen={this.state.showModal}
            contentLabel="Inline Styles Modal Example"
@@ -191,6 +141,7 @@ export default class Team extends React.Component{
             </Row>
           </div>
         </ReactModal>
+      </Desktop>
       </div>
     )
   };
@@ -201,5 +152,21 @@ export default class Team extends React.Component{
 
   open = (index) => {
     this.setState({showModal: true, modal: this.team_item[index]});
+  }
+
+  teamTable(){
+    let teamRow=[];
+    let arrTeam = Array.from(this.team_item);
+    while (arrTeam.length > 0) {
+      teamRow.push(arrTeam.splice(0,3))
+    }
+    return teamRow.map((teamCol,i) => (
+      <Row className="teamRow" key={i}>
+        {teamCol.map((team,j)=>{
+          return <Col key={j} xs><Row><Col xs><img src={team.icon+"Grey.png"} onClick={() => {this.open(i*3+j)}}/></Col><Col xs><h2><front onClick={() => {this.open(i*3+j)}}>{team.header}</front></h2></Col></Row></Col>
+        })}
+      </Row>
+    ));
+
   }
 }
