@@ -16,7 +16,7 @@ export default class Team extends React.Component{
   };
 
   team_item = [
-    {
+    { 
       icon_grey: './app/components/images/Core_Banking_Icon_Grey.png',
       icon_white: './app/components/images/Core_Banking_Icon_White.png',
       header: 'Core Banking System',
