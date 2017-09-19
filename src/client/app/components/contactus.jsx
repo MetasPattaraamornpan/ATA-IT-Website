@@ -56,7 +56,7 @@ export default class ContactUs extends React.Component {
           <h3>
             Bangkok Insurance Building,
               <br/>
-              29th floor, Sathorn Road, Bangkok, 10120
+              29th floor, South Sathorn Road, Bangkok, 10120
           </h3>
           <h2>Telephone</h2>
           <h3>+66 2 105 4574</h3>
