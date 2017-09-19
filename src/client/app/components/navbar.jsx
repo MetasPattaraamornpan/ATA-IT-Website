@@ -26,7 +26,7 @@ export default class Navbar extends React.Component {
                 <ul className="mainNavBar">
                   <li className="menuHeader" onClick={() => {this.goTo(0)}}>HOME</li>
                   <li className="menuHeader" onClick={() => {this.goTo(426)}}>ABOUT US</li>
-                  <li className="menuHeader" onClick={() => {this.goTo(1072)}}>OUR TEAMS</li>
+                  <li className="menuHeader" onClick={() => {this.goTo(1072)}}>OUR SERVICES</li>
                   <li className="menuHeader" onClick={() => {this.goTo(1556)}}>CAREERS</li>
                   <li className="menuHeader" onClick={() => {this.goTo(2068)}}>CONTACT US</li>
                 </ul>
@@ -43,7 +43,7 @@ export default class Navbar extends React.Component {
                   <ul className="menuBurger">
                     <li className="menu-item" onClick={() => {this.goTo(0)}}>HOME</li>
                     <li className="menu-item" onClick={() => {this.goTo(511)}}>ABOUT US</li>
-                    <li className="menu-item" onClick={() => {this.goTo(1257)}}>OUR TEAMS</li>
+                    <li className="menu-item" onClick={() => {this.goTo(1257)}}>OUR SERVICES</li>
                     <li className="menu-item" onClick={() => {this.goTo(1695)}}>CAREERS</li>
                     <li className="menu-item" onClick={() => {this.goTo(2281)}}>CONTACT US</li>
                   </ul>

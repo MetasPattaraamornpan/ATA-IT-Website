@@ -125,7 +125,7 @@ export default class Team extends React.Component{
       <Desktop>
         <Row className="teamRow" center="xs">
           <Col xs={6}>
-            <h1>Our Teams</h1>
+            <h1>Our Services</h1>
           </Col>
         </Row>
         {this.teamTable()}
