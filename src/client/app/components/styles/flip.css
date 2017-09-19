@@ -8,7 +8,6 @@
   bottom:40%;
   display:block;
   text-align: center;
-  font-family: Gotham;
 }
 
 .flip-container-desktop{
@@ -21,7 +20,6 @@
   bottom:40%;
   display:block;
   text-align: center;
-  font-family: Gotham;
 }
 
 #flip {
@@ -42,12 +40,12 @@
 }
 
 @keyframes show {
-  0% {margin-top:-75px;}
-  5% {margin-top:-50px;}
-  33% {margin-top:-50px;}
-  38% {margin-top:-30px;}
-  66% {margin-top:-30px;}
-  71% {margin-top:20px;}
-  99.99% {margin-top:20px;}
-  100% {margin-top:-75px;}
+  0% {margin-top:-100px;}
+  5% {margin-top:-82px;}
+  33% {margin-top:-82px;}
+  38% {margin-top:-55px;}
+  66% {margin-top:-55px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-100px;}
 }
