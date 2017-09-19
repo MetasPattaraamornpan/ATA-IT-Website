@@ -31,8 +31,8 @@ export default class Career extends React.Component {
         </Desktop>
         <Mobile>
           <img src="./app/components/images/career_00.jpeg"/>
-          <h1 className="careerContent">Why ATA IT?</h1>
-          <h3 >
+          <h1>Why ATA IT?</h1>
+          <h3>
           <front>At ATA IT, we strive for success through Efficiency in Motion, where success is only attainable when everyone moves forward together. Our team is full of magnificent people with varying backgrounds and experiences that can share different perspectives and help each other grow amazingly.</front>
           <div><br/></div>
           <front>Come Join us! Join a diverse team that succeeds. </front>

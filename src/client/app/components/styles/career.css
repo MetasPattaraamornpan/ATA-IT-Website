@@ -7,9 +7,8 @@
 }
 
 .careerContent #mobile{
-  padding-top: 30px;
   background-color: FFF;
-  margin: 20px 15%;
+  margin: 0px auto;
   text-align: center;
 }
 
@@ -25,7 +24,7 @@
   box-sizing: border-box;
 }
 
-.careerContent-bgimage {
+.careerContent #mobile .careerContent-bgimage {
   background: url(/app/components/images/career_00.jpeg);
   background-size: cover;
 }
