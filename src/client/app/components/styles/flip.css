@@ -16,6 +16,8 @@
   bottom:40%;
   display:block;
   text-align: center;
+  font-family: Gotham;
+  line-height: 20px;
 }
 
 .flip-container-desktop{
@@ -28,6 +30,7 @@
   bottom:40%;
   display:block;
   text-align: center;
+  font-family: Gotham;
 }
 
 #flip {
