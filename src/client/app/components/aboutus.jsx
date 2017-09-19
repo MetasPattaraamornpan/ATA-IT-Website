@@ -24,7 +24,9 @@ export default class AboutUs extends React.Component {
               </div>
             </Col>
             <Col xs >
-              <img style={{margin:'10% 0px'}} src="./app/components/images/aboutus_01.png"/>
+              <a href="https://www.nbc.ca/en/personal.html" rel="nofollow">
+                <img style={{margin:'10% 0px'}} src="./app/components/images/aboutus_01.png"/>
+              </a>
             </Col>
           </Row>
         </Desktop>
@@ -42,7 +44,9 @@ export default class AboutUs extends React.Component {
                 </h3>
               </div>
             <div>
-              <img style={{margin:'10% 0px', width:'100%'}} src="./app/components/images/aboutus_01.png"/>
+              <a href="https://www.nbc.ca/en/personal.html" rel="nofollow">
+                <img style={{margin:'10% 0px', width:'100%'}} src="./app/components/images/aboutus_01.png"/>
+              </a>
             </div>
         </Mobile>
       </div>
