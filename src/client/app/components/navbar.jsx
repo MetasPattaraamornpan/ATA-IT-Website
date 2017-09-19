@@ -25,10 +25,10 @@ export default class Navbar extends React.Component {
                 </div>
                 <ul className="mainNavBar">
                   <li className="menuHeader" onClick={() => {this.goTo(0)}}>HOME</li>
-                  <li className="menuHeader" onClick={() => {this.goTo(205)}}>ABOUT US</li>
-                  <li className="menuHeader" onClick={() => {this.goTo(834)}}>OUR TEAMS</li>
-                  <li className="menuHeader" onClick={() => {this.goTo(1386)}}>CAREERS</li>
-                  <li className="menuHeader" onClick={() => {this.goTo(1773)}}>CONTACT US</li>
+                  <li className="menuHeader" onClick={() => {this.goTo(426)}}>ABOUT US</li>
+                  <li className="menuHeader" onClick={() => {this.goTo(1072)}}>OUR TEAMS</li>
+                  <li className="menuHeader" onClick={() => {this.goTo(1556)}}>CAREERS</li>
+                  <li className="menuHeader" onClick={() => {this.goTo(2068)}}>CONTACT US</li>
                 </ul>
               </div>
             </navbar>
@@ -42,10 +42,10 @@ export default class Navbar extends React.Component {
                 <Menu id="stack" right customBurgerIcon={ <img src="./app/components/images/menu_icon.png" /> }>
                   <ul className="menuBurger">
                     <li className="menu-item" onClick={() => {this.goTo(0)}}>HOME</li>
-                    <li className="menu-item" onClick={() => {this.goTo(205)}}>ABOUT US</li>
-                    <li className="menu-item" onClick={() => {this.goTo(1047)}}>OUR TEAMS</li>
-                    <li className="menu-item" onClick={() => {this.goTo(1746)}}>CAREERS</li>
-                    <li className="menu-item" onClick={() => {this.goTo(2488)}}>CONTACT US</li>
+                    <li className="menu-item" onClick={() => {this.goTo(511)}}>ABOUT US</li>
+                    <li className="menu-item" onClick={() => {this.goTo(1257)}}>OUR TEAMS</li>
+                    <li className="menu-item" onClick={() => {this.goTo(1695)}}>CAREERS</li>
+                    <li className="menu-item" onClick={() => {this.goTo(2281)}}>CONTACT US</li>
                   </ul>
                 </Menu>
               </div>

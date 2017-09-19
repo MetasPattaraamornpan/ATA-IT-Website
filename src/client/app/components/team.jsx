@@ -16,7 +16,7 @@ export default class Team extends React.Component{
   };
 
   team_item = [
-    { 
+    {
       icon_grey: './app/components/images/Core_Banking_Icon_Grey.png',
       icon_white: './app/components/images/Core_Banking_Icon_White.png',
       header: 'Core Banking System',
@@ -95,17 +95,18 @@ export default class Team extends React.Component{
 
         Our team operates 24/7 including overnight, shift hours, weekends, and holidays.`
     }
+    ,{
+      icon_grey: './app/components/images/IT_Infra_Grey.png',
+      icon_white: './app/components/images/IT_Infra_White.png',
+      header: 'IT Infrastructure ',
+      detail: `System administrator takes care of all the IT infrastructure equipment of the Bank and the customer. We are working on infrastructure that provides :
+        • Enterprise server
+        • Enterprise storage
+        • Enterprise network
+        • Linux and Middleware
+        • Collaboration with app team for core banking systems`
+    }
     // ,{
-    //   icon_grey: './app/components/images/IT_Infra_Grey.png',
-    //   icon_white: './app/components/images/IT_Infra_White.png',
-    //   header: 'IT Infrastructure ',
-    //   detail: `System administrator takes care of all the IT infrastructure equipment of the Bank and the customer. We are working on infrastructure that provides :
-    //     • Enterprise server
-    //     • Enterprise storage
-    //     • Enterprise network
-    //     • Linux and Middleware
-    //     • Collaboration with app team for core banking systems`
-    // },{
     //   icon_grey: './app/components/images/Disaster_Recover_Grey.png',
     //   icon_white: './app/components/images/Disaster_Recover_White.png',
     //   header: 'Disaster Recovery',
