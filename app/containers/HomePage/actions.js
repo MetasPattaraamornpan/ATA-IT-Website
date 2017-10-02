@@ -1,6 +1,6 @@
 /*
  *
- * Home actions
+ * HomePage actions
  *
  */
 

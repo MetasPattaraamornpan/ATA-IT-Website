@@ -1,12 +1,23 @@
+/**
+ *
+ * HomePage
+ *
+ */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
+import { FormattedMessage } from 'react-intl';
+import { createStructuredSelector } from 'reselect';
+import { compose } from 'redux';
 
+import injectReducer from 'utils/injectReducer';
+import makeSelectHomePage from './selectors';
+import reducer from './reducer';
 import messages from './messages';
 
-
-export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>
@@ -14,12 +25,31 @@ export default class HomePage extends React.Component { // eslint-disable-line r
           <title>ATA IT Website</title>
           <meta name="description" content="This is Home page of ATA IT Website" />
         </Helmet>
-        <div>
-          <h1>
-            <FormattedMessage {...messages.header} />
-          </h1>
-        </div>
+        <FormattedMessage {...messages.header} />
       </div>
     );
   }
 }
+
+HomePage.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = createStructuredSelector({
+  homepage: makeSelectHomePage(),
+});
+
+function mapDispatchToProps(dispatch) {
+  return {
+    dispatch,
+  };
+}
+
+const withConnect = connect(mapStateToProps, mapDispatchToProps);
+
+const withReducer = injectReducer({ key: 'homePage', reducer });
+
+export default compose(
+  withReducer,
+  withConnect,
+)(HomePage);
