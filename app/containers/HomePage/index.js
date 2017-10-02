@@ -6,10 +6,10 @@ import { Helmet } from 'react-helmet';
 import messages from './messages';
 
 
-export default class HomePage extends React.Component {
+export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <article>
+      <div>
         <Helmet>
           <title>ATA IT Website</title>
           <meta name="description" content="This is Home page of ATA IT Website" />
@@ -19,7 +19,7 @@ export default class HomePage extends React.Component {
             <FormattedMessage {...messages.header} />
           </h1>
         </div>
-      </article>
+      </div>
     );
   }
 }
