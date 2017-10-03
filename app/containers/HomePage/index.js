@@ -11,6 +11,7 @@ import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
+import Aboutus from 'components/Aboutus';
 
 import injectReducer from 'utils/injectReducer';
 import makeSelectHomePage from './selectors';
@@ -26,6 +27,7 @@ export class HomePage extends React.Component { // eslint-disable-line react/pre
           <meta name="description" content="This is Home page of ATA IT Website" />
         </Helmet>
         <FormattedMessage {...messages.header} />
+        <Aboutus />
       </div>
     );
   }
