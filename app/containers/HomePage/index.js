@@ -11,7 +11,7 @@ import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
-import Aboutus from 'components/Aboutus';
+import Aboutus from 'components/AboutUs';
 
 import injectReducer from 'utils/injectReducer';
 import makeSelectHomePage from './selectors';

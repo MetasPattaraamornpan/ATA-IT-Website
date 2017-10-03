@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Aboutus extends React.Component { // eslint-disable-line react/prefer-stateless-function
+class AboutUs extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>
@@ -10,4 +10,4 @@ class Aboutus extends React.Component { // eslint-disable-line react/prefer-stat
   }
 }
 
-export default Aboutus;
+export default AboutUs;
